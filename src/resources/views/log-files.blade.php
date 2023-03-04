@@ -21,7 +21,7 @@
                     <th style="width: 90px;"><input type="checkbox" name="checkall" id="checkall" class="checkall" value="1" onclick="checkallCheckbox();" /> SL</th>
                     <th>Log Files</th>
                     <th>Size</th>
-                    <th></th>
+                    <th style="text-align: right;">#</th>
                 </tr>
             </thead>
             <tbody>
