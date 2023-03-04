@@ -79,5 +79,8 @@ Ex: http://localhost:8000/onex/log-viewer
 ]
 ```
 
+![admin_access](https://user-images.githubusercontent.com/24665327/222919478-474bcc99-bc5b-4414-8d17-6dfa16ef09b1.png)
+
+
 ## license:
 MIT
