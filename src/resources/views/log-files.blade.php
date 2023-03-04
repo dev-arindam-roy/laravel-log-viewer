@@ -34,9 +34,9 @@
                                 <td class="name">{{ $v['name'] }} @if ($v['name'] == $today_log) <span> - Today</span> @endif</td>
                                 <td>{{ !empty($v['readable_size']) ? $v['readable_size'] : '0 KB' }}</td>
                                 <td style="text-align:right;">
-                                    <a href="{{ route('cssLogViewer.downloadlogs', array('file' => $v['name'])) }}" class="btn btn-download">Download</a>
-                                    <a href="{{ route('cssLogViewer.deletelogs', array('file' => $v['name'])) }}" class="btn btn-delete" onclick="return confirm('Are you sure? You want to delete this file');">Delete</a>
-                                    <a href="{{ route('cssLogViewer.clearlogs', array('file' => $v['name'])) }}" class="btn btn-clear">Clear</a>
+                                    <a href="{{ route('cssLogViewer.downloadlogs', array('file' => $v['name'])) }}" class="btn btn-download" title="Download Logs">Download</a>
+                                    <a href="{{ route('cssLogViewer.deletelogs', array('file' => $v['name'])) }}" class="btn btn-delete" title="Delete Logs" onclick="return confirm('Are you sure? You want to delete this file');">Delete</a>
+                                    <a href="{{ route('cssLogViewer.clearlogs', array('file' => $v['name'])) }}" class="btn btn-clear" title="Clear Logs">Clear</a>
                                     <a href="{{ route('cssLogViewer.viewlogs', array('file' => $v['name'])) }}" class="btn btn-view" title="View Logs" target="_blank">View</a>
                                 </td>
                             </tr>
