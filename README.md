@@ -46,6 +46,17 @@ Ex: http://localhost:8000/onex/log-viewer
 ![extract_log](https://user-images.githubusercontent.com/24665327/222919351-786ca012-f478-4e34-aced-5e6a7683981c.png)
 
 
+## Functionalities / Features
+<dl>
+  <dt>>> <code>Download all log files in a zip file </span></code></dt>
+  <dt>>> <code>Download selected log files in a zip file </span></code></dt>
+  <dt>>> <code>Delete all log files just a click </span></code></dt>
+  <dt>>> <code>Delete selected log files </span></code></dt>
+  <dt>>> <code>Also you can Download, Clear, Delete each log file</span></code></dt>
+  <dt>>> <code>You can restrict the access of log files by the config settings</span></code></dt>
+  <dt>>> <code>You can customize the configuration as you want</span></code></dt>
+</dl>
+
 #### You can modify the configuration settings in - "config/log-viewer.php":
 
 ```php
