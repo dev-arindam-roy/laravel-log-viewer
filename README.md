@@ -40,6 +40,12 @@ Ex: http://your-website/onex/log-viewer
 Ex: http://localhost:8000/onex/log-viewer
 ```
 
+![log_viewer](https://user-images.githubusercontent.com/24665327/222919334-3bb531a5-6a42-49ce-93c9-7d1b2478179d.png)
+
+
+![extract_log](https://user-images.githubusercontent.com/24665327/222919351-786ca012-f478-4e34-aced-5e6a7683981c.png)
+
+
 #### You can modify the configuration settings in - "config/log-viewer.php":
 
 ```php
