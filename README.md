@@ -1,10 +1,8 @@
 # LARAVEL LOG VIEWER
-=======================
 
 ### A package for viewing or rendering the Laravel logs. It also extract logs in different level.
 
 ## Installation
-==================
 
 > **No dependency on PHP version and LARAVEL version**
 
@@ -28,7 +26,7 @@ CreativeSyntax\LogViewer\CreativeSyntaxLogViewer::class,
 php artisan vendor:publish --provider="CreativeSyntax\LogViewer\CreativeSyntaxLogViewer" --force
 ```
 
-## How to use?:
+## How to use?: It's Very Easy
 
 > **DIRECT USE BY ROUTE**
 ---
