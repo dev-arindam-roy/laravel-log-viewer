@@ -28,6 +28,13 @@ return [
     'route_name' => 'log-viewer',
 
     /**
+     * If you want to add any middleware (s) to restrict the access
+     * 
+     * default: web
+     */
+    'route_middleware' => ['web'],
+
+    /**
      * If you want to change the page heading
      *
      */
@@ -35,7 +42,7 @@ return [
 
 
     /**
-     * If you want to use a authentication process access the system information view page
+     * If you want to use a authentication process to access the system log information view page
      */
     'authentication' => [
         'is_enabled' => env('LOGVIEWER_AUTH_ENABLED', false),

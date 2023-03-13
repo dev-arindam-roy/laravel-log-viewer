@@ -1,8 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 $logViewerRouteEnabled = true;
 $logViewerRoutePrefix = 'onex';
 $logViewerRouteName = 'log-viewer';
+$logViewerMiddleware = ['web'];
 
 $publishedConfigFilePath = config_path('log-viewer.php');
 if (file_exists($publishedConfigFilePath)) {
@@ -12,7 +15,7 @@ if (file_exists($publishedConfigFilePath)) {
 }
 
 if ($logViewerRouteEnabled) {
-    Route::group(['namespace' => 'CreativeSyntax\LogViewer\Http\Controllers', 'prefix' => $logViewerRoutePrefix, 'middleware' => ['web']], function() use($logViewerRouteName) {
+    Route::group(['namespace' => 'CreativeSyntax\LogViewer\Http\Controllers', 'prefix' => $logViewerRoutePrefix, 'middleware' => $logViewerMiddleware], function() use($logViewerRouteName) {
         Route::get($logViewerRouteName, 'LogViewerController@index')->name('cssLogViewer.index');
         Route::get($logViewerRouteName . '/logs/{file}', 'LogViewerController@viewLogs')->name('cssLogViewer.viewlogs');
         Route::get($logViewerRouteName . '/download/{file}', 'LogViewerController@downloadLogs')->name('cssLogViewer.downloadlogs');

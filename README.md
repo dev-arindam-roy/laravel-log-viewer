@@ -80,8 +80,8 @@ Ex: http://localhost:8000/onex/log-viewer
 ```
 
 ```php
-/** If you want to enable the securiry for access the system information
- *  Then make it ('is_enabled') true and also you can set login-id and password 
+/** If you want to enable the securiry for access the system logs information
+ *  Then make it ('is_enabled') true and also you can set login-id and password through .env
  */
 'authentication' => [
     'is_enabled' => env('LOGVIEWER_AUTH_ENABLED', false),
@@ -94,4 +94,7 @@ Ex: http://localhost:8000/onex/log-viewer
 
 
 ## license:
-MIT
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## Post Issues: if found any
+If have any issue please [write me](https://github.com/dev-arindam-roy/laravel-log-viewer/issues).
